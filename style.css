@@ -2,22 +2,26 @@
     width: 1000px;
     margin: auto;
 }
-.input-container{
+.form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 15px;
-}
-.input{
-    width: 100%;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid rgb(211, 173, 255);
 }
-.button{
+.form__input{
+    width: 100%;
+    outline:none;
+    border: none;
+}
+.form__button{
     border: none;
     background: none;
-    margin-left: 20px;
+}
+.-icon{
+    width: 20px;
 }
 .section-result{
     display: flex;
@@ -33,4 +37,12 @@
     box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
     border-radius: 20px;
     padding: 10px;
+}
+.-tel::before{
+    content: url(img/free-icon-telephone-159832.png);
+    zoom:3%;
+}
+.-mail::before{
+    content: url(img/free-icon-mail-icon-5757765.png);
+    zoom:3%;
 }
