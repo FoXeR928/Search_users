@@ -1,0 +1,36 @@
+.fix-conteiner{
+    width: 1000px;
+    margin: auto;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid rgb(211, 173, 255);
+}
+.button{
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+.section-result{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-result__article{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 275px;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+}
