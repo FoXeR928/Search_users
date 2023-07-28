@@ -1,16 +1,30 @@
+const api='http://127.0.0.1:3000'
+
 $(function(){
-    console.log(1)
     $('.form__button').click(function(evt){
         evt.preventDefault();
         var search=$('input[name="search"]').val();
-        console.log(search)
-        $.ajax({
-            url: "http://127.0.0.1:3000",
-            headers: {'term': search},
-            data: {text: 'Текст'},
-	        success: function(data){
-		        console.log(data);
-            }
-        })
+        if(search.length>0){
+             $.ajax({
+                url: api,
+                type: 'GET',
+                data: {term: search},
+                headers: { "Accept": "application/json" },
+                success: function(data){
+                    console.log(data);
+                }
+            })
+        }
+        else{
+            $.ajax({
+                url: api,
+                type: 'GET',
+                headers: { "Accept": "application/json" },
+                success: function(data){
+                    console.log(data);
+                }
+            })
+        }  
+        $('input[name="search"]').val('');
     })
 })
