@@ -8,7 +8,7 @@
     justify-content: space-between;
     margin-bottom: 15px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 7px;
     border: 1px solid rgb(211, 173, 255);
 }
 .form__input{
@@ -39,10 +39,11 @@
     padding: 10px;
 }
 .-tel::before{
-    content: url(img/free-icon-telephone-159832.png);
+    content: url(../img/free-icon-telephone-159832.png);
     zoom:3%;
 }
 .-mail::before{
-    content: url(img/free-icon-mail-icon-5757765.png);
+    content: url(../img/free-icon-mail-icon-5757765.png);
     zoom:3%;
+    vertical-align: middle;
 }
