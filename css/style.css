@@ -1,12 +1,14 @@
-.fix-conteiner{
+body{
+    margin: 0;
+}
+ .fix-conteiner{
     width: 1000px;
-    margin: auto;
+    margin: 10px auto;
 }
 .form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 15px;
     border-radius: 20px;
     padding: 7px;
     border: 1px solid rgb(211, 173, 255);
@@ -24,10 +26,11 @@
     width: 20px;
 }
 .section-result{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
 }
 .section-result__article{
     display: flex;
@@ -46,4 +49,28 @@
     content: url(../img/free-icon-mail-icon-5757765.png);
     zoom:3%;
     vertical-align: middle;
+}
+.-link{
+    text-decoration: none;
+    color: gray;
+}
+.info-container{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.144);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: center;
+}
+.section{
+    margin: 125px auto;
+    width: 600px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
 }
