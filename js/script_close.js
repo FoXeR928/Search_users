@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.article-about__img').on('click', function(){
+    $('body').on('click', '.article-about__img',function(){
         console.log(1)
         $('.info-container').remove()
     })

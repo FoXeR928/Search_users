@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.section-result__article').on('click', function(){
+    $('.section-result').on('click', '.section-result__article', function(){
         user=$(this).children('h3').text()
         $.getJSON(api+'/?term='+user, function(data){
             for (users of data){
