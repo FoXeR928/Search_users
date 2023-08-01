@@ -29,17 +29,21 @@ body{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 }
 .section-result__article{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 296px;
     height: 275px;
     box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
     border-radius: 20px;
     padding: 10px;
+    transition: 0.2s;
+}
+.section-result__article:hover{
+    transform: scale(1.1);
 }
 .-tel::before{
     content: url(../img/free-icon-telephone-159832.png);
@@ -53,6 +57,7 @@ body{
 .-link{
     text-decoration: none;
     color: gray;
+    margin: 0;
 }
 .info-container{
     position: absolute;
@@ -61,6 +66,7 @@ body{
     height: 100%;
     margin: 0;
     bottom: 0px;
+    z-index: 4;
 }
 .-info{
     display: flex;

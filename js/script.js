@@ -7,14 +7,14 @@ $(function(){
         if(search.length>0){
             $.getJSON(api+'/?term='+search, function(data){
                 for (users of data){
-                    $(".section-result").append('<article class="section-result__article"><h3 class="article__h3" class="article__h2">'+users.name+'</h3><a class="article__a -tel -link" href="tel:'+users.phone+'">'+users.phone+'</a><a class="article__a -mail -link" href="mailto:'+users.email+'">'+users.email+'</a></article>')
+                    $(".section-result").append('<article class="section-result__article"><h3 class="article__h3" class="article__h2">'+users.name+'</h3><p class="article__p -tel -link">'+users.phone+'</p><p class="article__p -mail -link">'+users.email+'</p></article>')
                 }
             }
         )}
         else{
             $.getJSON(api, function(data){
                     for (users of data){
-                        $(".section-result").append('<article class="section-result__article"><h3 class="article__h3" class="article__h2">'+users.name+'</h3><a class="article__a -tel -link" href="tel:'+users.phone+'">'+users.phone+'</a><a class="article__a -mail -link" href="mailto:'+users.email+'">'+users.email+'</a></article>')
+                        $(".section-result").append('<article class="section-result__article"><h3 class="article__h3" class="article__h2">'+users.name+'</h3><p class="article__p -tel -link">'+users.phone+'</p><p class="article__p -mail -link">'+users.email+'</p></article>')
                     }
                 }
             )
