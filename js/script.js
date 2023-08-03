@@ -1,4 +1,4 @@
-const api='http://[::1]:3000'
+const api='http://127.0.0.1:3000'
 $(function(){
     $('.form__button').click(function(evt){
         evt.preventDefault();
